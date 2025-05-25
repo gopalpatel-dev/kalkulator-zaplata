@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Безплатен онлайн калкулатор за изчисляване на нетна и брутна заплата в България. Изчислете данъците и осигуровките за 2025 година.">
+    <meta name="keywords" content="калкулатор заплата, изчисляване заплата, брутна заплата, нетна заплата, данъчен калкулатор, България">
+    <meta property="og:title" content="Онлайн Калкулатор Заплата | Изчислете Нетна и Брутна Заплата">
+    <meta property="og:description" content="Безплатен инструмент за изчисляване на заплата с всички данъци и осигуровки за 2025 година.">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Онлайн Калкулатор Заплата | Изчислете Нетна и Брутна Заплата</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Калкулатор Заплата</h1>
+        <p>Изчислете нетната и брутната си заплата за 2025 година</p>
+    </header>
+
+    <main>
+        <div class="calculator-container">
+            <div class="input-section">
+                <div class="form-group">
+                    <label for="salary-type">Тип заплата:</label>
+                    <select id="salary-type">
+                        <option value="gross">Брутна → Нетна</option>
+                        <option value="net">Нетна → Брутна</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="salary-amount" id="salary-label">Брутна заплата (лв):</label>
+                    <input type="number" id="salary-amount" min="0" step="1" value="2000">
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Година:</label>
+                    <select id="year">
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="disability" name="disability">
+                    <label for="disability">Увреден труд</label>
+                </div>
+
+                <button id="calculate-btn">Изчисли</button>
+            </div>
+
+            <div class="results-section">
+                <h2>Резултати</h2>
+                <div class="result-item">
+                    <span>Брутна заплата:</span>
+                    <span id="gross-salary">0.00 лв</span>
+                </div>
+                <div class="result-item">
+                    <span>Данък общ доход:</span>
+                    <span id="income-tax">0.00 лв</span>
+                </div>
+                <div class="result-item">
+                    <span>Здравни осигуровки:</span>
+                    <span id="health-insurance">0.00 лв</span>
+                </div>
+                <div class="result-item">
+                    <span>Пенсионни осигуровки:</span>
+                    <span id="pension-insurance">0.00 лв</span>
+                </div>
+                <div class="result-item">
+                    <span>Осигуровки по безработица:</span>
+                    <span id="unemployment-insurance">0.00 лв</span>
+                </div>
+                <div class="result-item total">
+                    <span>Нетна заплата:</span>
+                    <span id="net-salary">0.00 лв</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Как се изчислява заплатата?</h2>
+            <p>Този калкулатор използва актуалните данъчни ставки и осигуровки за 2024 година:</p>
+            <ul>
+                <li><strong>Данък общ доход:</strong> 10%</li>
+                <li><strong>Здравни осигуровки:</strong> 8% (3.2% за служителя, 4.8% за работодателя)</li>
+                <li><strong>Пенсионни осигуровки:</strong> 18.92% (14.12% за служителя, 4.8% за работодателя)</li>
+                <li><strong>Осигуровки по безработица:</strong> 1.2% (0.8% за служителя, 0.4% за работодателя)</li>
+            </ul>
+            <p>За лица с увреден труд се прилагат различни ставки на осигуровки.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Калкулатор Заплата. Всички права запазени.</p>
+        <p>Информацията в този сайт е за общи цели и не представлява професионален съвет.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
