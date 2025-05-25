@@ -1,7 +1,5 @@
 
 
 Автор: Гопал Пател
-GitHub: gopalpatel-devin
-Уебсайт: Безплатни Калкулатори
-
-[https://gopalpatel-devin.github.io/kalkulator-zaplati/](https://gopalpatel-devin.github.io/kalkulator-zaplati/)
+GitHub: [gopalpatel-dev](https://github.com/gopalpatel-dev/)
+Уебсайт: [Безплатни Калкулатори](https://bezplatnikalkulatori.online/)
